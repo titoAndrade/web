@@ -18,9 +18,9 @@ function App() {
   return (
     <div
       id='all'
-      class="container-fluid"
-      style={{ background: '#171717' }}>
-      <Suspense id='all' fallback={<Loader id='all'/>}>
+      class="container"
+      style={{ background: '#171717', width:'100%', margin: 0 }}>
+      <Suspense id='all' fallback={<Loader id='all' />}>
         <div class='row'>
 
           <Navbar/>

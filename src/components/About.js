@@ -8,12 +8,12 @@ AOS.init()
 
 const About = () => {
   return (
-    <div class="container-fluid mt-5" id='about'>
+    <div class="container-fluid" id='about'>
 
       <div class="row justify-content-center" id='cont'
            style={{
             alignContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
            }}>
             
         {/* I M A G E */}
@@ -21,33 +21,34 @@ const About = () => {
           data-aos="fade-right"
           data-aos-duration="2000"
           id='image'
-          class="col-4 mt-4 me-5"
+          class="col-xl-5 col-md-12 "
           style={{
-            height: '100vh'
+            textAlign: 'center',
+            margin: '1vmax',
+            marginLeft:'-4vmax',
+            marginRight: '5vmax'
           }}>
            
-          <div class="mt-4"
+          <img
+            class="photoBack"
+            src={photo} alt=""
             style={{
-              marginTop: '-4em'
-            }}>
+              background: 'transparent',
+              height: '90vh',
+              position: 'absolute',
+              zIndex: 100,
+            }}
+          />
 
-            <img class="photoBack"
-              src={photo} alt=""
-              style={{
-                background: 'transparent',
-                height: '90vh',
-                position: 'absolute',
-                zIndex: 100
-            }}/>
-            <img 
-              src={photoBack} alt=""
-              style={{
-                background: 'transparent',
-                height: '90vh',
-                position: 'relative',
-                zIndex: 0
-            }}/>
-          </div>
+          <img 
+            src={photoBack} alt=""
+            style={{
+              background: 'transparent',
+              height: '90vh',
+              position: 'relative',
+              zIndex: 0
+            }}
+          />
         
         </div>
         
@@ -55,140 +56,132 @@ const About = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="800"
-          class="col-lg-6 col-sm-5"
+          class="col-xl-6 col-lg-6 col-md-11 col-sm-12"
           id='boxShadows'
           style={{
             color: '#ededed',
-            height: '85vh',
             padding: '2em',
             border: 'solid 1px #EDEDED',
             }}>
 
+
+          {/* A B O U T  T I T L E */}
           <div
             data-aos="fade-right"
             data-aos-duration="3000"
             class="row">
-
             <div
               data-aos="fade-right"
               data-aos-duration="1800"
-              class="col-lg-6 col-sm-3">
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
               <h1 class="aboutTitle"
                 style={{
                 fontFamily: 'anton',
                 fontWeight: 400,
-                fontSize: '70px',
-                letterSpacing: 0,
-              }}>About me
+                fontSize: '6vmax',
+                margin: 0,
+                padding: 0
+                }}>About me
+                <lord-icon id='lordiTitle'
+                  src="https://cdn.lordicon.com/xqnbvely.json"
+                  trigger="hover"
+                  colors="primary:#DA0037,secondary:#171717"
+                  style={{
+                    width: '15vmin',
+                    height: '15vmin',
+                    marginTop: '-8vmin',
+                    marginLeft: '1vmax'
+                  }}
+                />
               </h1>
             </div>
-
-            <div class="col-1" id='lordiTitle'> 
-              <lord-icon
-                src="https://cdn.lordicon.com/xqnbvely.json"
-                trigger="hover"
-                colors="primary:#DA0037,secondary:#171717"
-                style={{
-                  width: '90px',
-                  height: '90px',
-                  marginLeft: -40,
-                  marginTop: -30
-                  }}>
-              </lord-icon>
-            </div>
-
           </div>
 
           {/* A B O U T  T E X T */}
-          <div
-            class="aboutText"
-            data-aos="fade-up"
-            data-aos-duration="1800"
-            style={{
-              color: '#ededed',
-              textAlign: 'justify',
-              marginTop: '1rem',
-              fontSize: '22px',
-              fontFamily: 'roboto',
-              fontWeight: '300',
-            }}>
-             <p>Hi, I'm <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>Tito Andrade</b>, I'm a <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>self-taught </b>junior web developer, To train myself I invested a lot of time doing research to find the right courses, tutorials and of course, I read official documentation of different technologies used for both frontend and backend.</p>
-             
-             <p style={{ marginTop: -10 }}>
-             I would like to start working in a company where I can continue learning and mastering different technologies and languages ​​and become a <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>World-class</b> developer!
-             </p>
-
+          <div class="row mt-3">
+            <div
+              class="col-12"
+              data-aos="fade-up"
+              data-aos-duration="1800"
+              style={{
+                color: '#ededed',
+                textAlign: 'justify',
+                fontSize: '130%',
+                fontFamily: 'roboto',
+                fontWeight: '300',
+              }}>
+              <p>Hi, I'm <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>Tito Andrade</b>, I'm a <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>self-taught </b>junior web developer, To train myself I invested a lot of time doing research to find the right courses, tutorials and of course, I read official documentation of different technologies used for both frontend and backend.</p>
+              
+              <p style={{ marginTop: -10 }}>
+              I would like to start working in a company where I can continue learning and mastering different technologies and languages ​​and become a <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>World-class</b> developer!
+              </p>
+              
+            </div>
           </div>
-          {/* O F F - L I N E  I N T E R E S T */}
-          <div id='interest'
-          data-aos="fade-right"
-          data-aos-duration="600"
-          class="row mt-4">
-            <div class="col-lg-3 col-sm-4">
+
+          {/* O F F - L I N E  I N T E R E S T  T I T L E */}
+          <div
+            data-aos="fade-right"
+            data-aos-duration="600"
+            class="row mt-4">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5">
               <h2 
-                class="offLineTitle"
+                class="aboutTitle"
                 style={{
                   fontFamily: 'anton',
                   fontWeight: 400,
-                  fontSize: '35px',
+                  fontSize: '3em',
                   textIndent: 4,
                   textAlign: 'left'
                 }}>Off-line
               </h2>
             </div>
+          </div>
 
-            <div class="row mt-1 justify-content-center"
-                 id="offlineicons"
-                 style={{
-                   textAlign: 'center'
-                 }}>
+          {/* O F F - L I N E  I N T E R E S T   I C O N S */}
+          <div class="row mt-1" id="offlineicons">
+          
+            <div class="col-12" style={{ textAlign: 'center' }}>
+ 
+              <lord-icon title="gaming"
+                src="https://cdn.lordicon.com/ktxpktdd.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#DA0037"
+                style={{ marginRight: '4.9vmin', width: '12vmin', height: '12vmin', cursor: 'pointer'}}>
+              </lord-icon>
 
-              <div class="col-lg-2 col-sm-1">
-                <lord-icon title="gaming"
-                  src="https://cdn.lordicon.com/ktxpktdd.json"
-                  trigger="hover"
-                  colors="primary:#ffffff,secondary:#DA0037"
-                  style={{ width: '60px', height: '60px', cursor: 'pointer'}}>
-                </lord-icon>
-              </div>
-              <div class="col-lg-2 col-sm-1 ms-4">
-                <lord-icon title="mma"
-                  src="https://cdn.lordicon.com/ibgjiwvi.json"
-                  trigger="hover"
-                  colors="primary:#ffffff,secondary:#DA0037"
-                  style={{ width: '60px', height: '60px', cursor: 'pointer'}}>
-                </lord-icon>
-              </div>
-              <div class="col-lg-2 col-sm-1 ms-4">
-                <lord-icon title="movies & series"
-                  src="https://cdn.lordicon.com/tdxypxgp.json"
-                  trigger="hover"
-                  colors="primary:#ffffff,secondary:#DA0037"
-                  style={{ width: '60px', height: '60px', cursor: 'pointer'}}>
-                </lord-icon>
-              </div>
-              <div class="col-lg-2 col-sm-1 ms-4">
-                <lord-icon title="scotch & beer"
-                  src="https://cdn.lordicon.com/szzsfswk.json"
-                  trigger="hover"
-                  colors="primary:#ffffff,secondary:#DA0037"
-                  style={{ width: '60px', height: '60px', cursor: 'pointer'}}>
-                </lord-icon>
-              </div>
-              <div class="col-lg-2 col-sm-1 ms-4">
-                <lord-icon title="pizza"
-                  src="https://cdn.lordicon.com/jpdtnwas.json"
-                  trigger="hover"
-                  colors="primary:#ffffff,secondary:#DA0037"
-                  style={{ width: '60px', height: '60px', cursor: 'pointer'}}>
-                </lord-icon>
-              </div>
-
+              <lord-icon title="mma"
+                src="https://cdn.lordicon.com/ibgjiwvi.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#DA0037"
+                style={{ marginRight: '4.9vmin', width: '5.5vmax', height: '5.5vmax', cursor: 'pointer'}}>
+              </lord-icon>
+                            
+              <lord-icon title="movies & series"
+                src="https://cdn.lordicon.com/tdxypxgp.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#DA0037"
+                style={{ marginRight: '4.9vmin', width: '5.5vmax', height: '5.5vmax', cursor: 'pointer'}}>
+              </lord-icon>
+                            
+              <lord-icon title="scotch & beer"
+                src="https://cdn.lordicon.com/szzsfswk.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#DA0037"
+                style={{ marginRight: '4.9vmin', width: '5.5vmax', height: '5.5vmax', cursor: 'pointer'}}>
+              </lord-icon>
+                            
+              <lord-icon title="pizza"
+                src="https://cdn.lordicon.com/jpdtnwas.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#DA0037"
+                style={{ marginRight: '4.9vmin', width: '5.5vmax', height: '5.5vmax', cursor: 'pointer'}}>
+              </lord-icon>
+              
             </div>
 
           </div>
 
-          
         </div>
 
       </div>

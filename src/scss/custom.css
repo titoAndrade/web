@@ -12452,10 +12452,10 @@ fieldset:disabled .btn {
 
 /* C U S T O M - C S S */
 
+
 ::-webkit-scrollbar { 
-  width: 9px;
-  height: 6px;
-  background: #101010;
+  width: 10px;
+  background: #101010 ;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -12465,12 +12465,16 @@ fieldset:disabled .btn {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #DA0037);
+  cursor: pointer;
 } 
 
+#loading {
+  overflow: hidden;
+}
 
 .dbTitle {
   box-shadow: inset 0 0 0 0 linear-gradient(#DA0037, transparent);
-  color: #fff;
+  color: #EDEDED;
   transition: color .6s ease-in-out, box-shadow .6s ease-in-out;
   text-align: left;
 }
@@ -12489,16 +12493,6 @@ div #icon:hover {
 div #icon:not(:hover) {
   transition: 0.5s ease-out;
 }
-
-* {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 
 .dropItem {
   padding: 1.5em;
@@ -12561,46 +12555,15 @@ div #icon:not(:hover) {
   cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
   #all {
     max-width: 100% !important;
-    overflow-x: hidden;
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
+    user-select: none;
   }
 
   .nav {
     position:fixed;
   }
 
-  #hero div {
-    max-width: 100%;
-    height: 60vh;
-  }
-
-  #hero .heroName{
-    max-width: 100%;
-    font-size: 85px;
-    margin-left: -1.1em;
-    margin-top: 0.025em;
-    margin-bottom: 0.1em;
-
-  }
-
-  #hero div h1 .heroPronoun {
-    max-width: 100%;
-    margin-left: -1.1em;
-    margin-top: 1.2em;
-  }
-
-  .heroTyped {
-    max-width: 100%;
-    margin-top: -6.5em;
-    margin-left: -2.4em;
-  }
-}
 
 /* A B O U T */
 
@@ -12630,7 +12593,18 @@ div #icon:not(:hover) {
   text-indent: 10px;
 }
 .aboutTitle:hover {
-  box-shadow: inset 285px 0 0 0 #DA0037;
+  box-shadow: inset 50vmin 0 0 0 #DA0037;
+  cursor: pointer;
+  color: #171717;
+}
+
+.technologiesTitle {
+  box-shadow: inset 0 0 0 0 linear-gradient(#DA0037, transparent);
+  transition: color .6s ease-in-out, box-shadow .6s ease-in-out;
+}
+
+.technologiesTitle:hover {
+  box-shadow: inset 100vmin 0 0 0 #DA0037;
   cursor: pointer;
   color: #171717;
 }
@@ -12647,6 +12621,8 @@ div #icon:not(:hover) {
 }
 
 @media screen and (max-width: 700px) {
+
+
   #about {
     max-width: 100%;
   }
@@ -12718,60 +12694,44 @@ div #icon:not(:hover) {
   
 
   @media screen and (max-width: 700px) {
-
-    #skills {
-      max-width: 100%;
-    }
     
-    #techTitle {
-      margin-top: 2em;
-      padding-left: 3em;
+    #iconsTec div {
+      margin-top: -1.5em;
     }
 
-    #skills div {
-      display: inline-block;
+    #iconsFrameworks {
+      position: absolute;
     }
 
-/* LANGUAGES & DATABASE & FRAMWORKS & TOOLS */
-
-    #responsiveHide {
-      display: none !important;
+    #iconsFrameworks div {
+      margin-top: 7em;
     }
 
-    #responsiveShow {
-      display:contents !important;
+    #database div{
+      margin-top: 6em;
     }
 
-    #languageTitle {
-      display: inline;
-      text-align: center;
-      padding: 20px 25px;
-      margin-left: -0.5em;
-      margin-right: -1em;
+    #iconsData div{
+      margin-top: -1.5em;
     }
 
-   #skills #items {
-    display: inline-block;
-    width: 90%;
-    font-size: 0.75em;
-   }
+    #database #datacontent {
+      margin-top: 9em;
+    }
 
-   #skills #items div {
-    margin-top: -0.45em;
-    margin-bottom: -0.45em;
-   }
+    .langTitle {
+      padding-left: 1.2em;
+    }
 
-   #skills #icondiv {
-    margin-top: 2em;
-    padding: 0;
-   }
+    #techTitle{
+      margin-left: -3em;
+      font-size: 0.8em;
+    }
 
-   #skills #icondiv div {
-    display: inline;
-    padding: 1.1em;
-   }
-
-
+    #techTitle h1 {
+      margin-left: 0.7em;
+      text-align: center ;
+    }
   }
 
   /* P O R T F O L I O */
@@ -12780,7 +12740,7 @@ div #icon:not(:hover) {
 
     #portfolio {
       max-width: 100%;
-      margin-top: 10em;
+      margin-top: 12em;
     }
 
     #portfolio img {
@@ -12795,26 +12755,23 @@ div #icon:not(:hover) {
       margin-bottom: -1em;
     }
 
+    #devices {
+      display: none;
+    }
+
     #textwork {
-      display: inline-block;
-      margin-top: -20em;
-      padding-left: -2em;
+      font-size: 3.5vmin;
+      text-align: center;
+      margin-left: -7vmin;
+    }
+    
+
+    #textwork h1 {
+      margin-left: -0.25em;
     }
 
-    #textwork div {
-      padding: 2em;
-      margin-left: -5em;
-    }
-
-    #textwork2 {
-      display: inline-block;
-      margin-top: 0em;
-      padding-left: 2em;
-    }
-
-    #textwork2 div {
-      padding: 2em;
-      margin-left: -5em;
+    #itemContainer {
+      margin-bottom: -8em;
     }
 
   }
@@ -12832,23 +12789,6 @@ div #icon:not(:hover) {
     transition: .3s ease-in-out
   }
 
-  @media screen and (max-width: 700px) {
-
-    #contact {
-      max-width: 95%;
-      margin-top: 4em;
-    }
-
-    #contactTitle{
-      padding-left: 4em;
-      padding-right: 3em;
-    }
-
-    #sendFormButton {
-      max-width: 77%;
-    }
-
-  }
 
 }
 
@@ -12866,26 +12806,13 @@ div #icon:not(:hover) {
 @media screen and (max-width: 700px) {
 
   #social {
-    max-width: 100%;
-    margin-bottom: -2em;
+    text-align: center;
   }
 
-  #social div{
-    height: 12%;
-    margin: 0;
-    padding: 0;
-    margin-left: -3px;
-  }
+  #social div {
+    margin-top: -0.5em;
+    margin-bottom: -0.8em;
 
-  #social div div {
-    padding: 2em;
-    padding-bottom: 1em;
-  }
-
-  #social #copyright {
-    margin: 0;
-    padding: 0;
-    display: inline;
   }
 
 }

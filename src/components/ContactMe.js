@@ -25,24 +25,23 @@ const ContactMe = () => {
           fontFamily: 'roboto',
           fontWeight: '500',
           fontSize: '15px',
+          marginTop: '8em'
          }}>
 
       <div class="row justify-content-center">
 
         <div id='boxShadows'
-          class="col-lg-7 col-sm-4"
+          class="col-xl-7 col-lg-7 col-md-10 col-sm-12"
           style={{
             border: 'solid 1px #ededed',
-            // borderRadius: '1em',
-            // boxShadow: '5px 5px 20px #000',
             paddingTop: '2em',
             paddingBottom: '3em'      
           }}>
 
          {/* T I T L E */}
           <div class="row justify-content-center mb-3 me-1">
-            <div class="col-lg-5 col-sm-3" id='contactTitle' style={{ fontFamily: 'anton'}}>
-            <h1 class="dbTitle" style={{ fontSize: '40px', textAlign: 'center'}}>Contact me</h1>
+            <div class="col-xl-4 col-lg-4 col-md-6 " id='contactTitle' style={{ fontFamily: 'anton'}}>
+            <h1 class="dbTitle" style={{ fontSize: '2.5em', textAlign: 'center'}}>Contact me</h1>
             </div>
           </div>
 
@@ -81,19 +80,15 @@ const ContactMe = () => {
           {/* B U T T O N */}
           <div class="row justify-content-center">
             <button 
-              class="col-9 mt-1 btn"
+              class="col-3 mt-1 btn btn-primary"
               type="submit"
               value="Send"
               id="sendFormButton"
               style={{
-                fontFamily: 'anton',
-                fontWeight: '500',
-                fontSize: '16px',
-                letterSpacing: 1,
                 background: '#DA0037',
-                color: '#171717',
+                color: '#EDEDED',
                 border: 'none',
-                width: '32em'
+                width: '37.5vw'
               }}>
               Send
             </button>
@@ -104,6 +99,7 @@ const ContactMe = () => {
         </div>
       
       </div>
+
     </div>
   )
 }

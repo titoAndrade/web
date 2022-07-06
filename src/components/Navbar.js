@@ -35,20 +35,21 @@ const Navbar = () => {
               <Dropdown.Menu
                 id="menuDropdown"
                 style={{
-                  background: '#000',
-                  border: 'none',
+                  background: 'rgba(145, 145, 145, 0.19)',
+                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                  backdropFilter: 'blur(10.2px)',
                   borderRadius: 0,
-                  margin: -10,
+                  // margin: -10,
                   marginTop: 1,
-                  fontSize: '1.6em',
-                  fontFamily: 'anton',
-                  letterSpacing: 4
+                  fontSize: '1.8vmax',
+                  fontFamily: 'roboto',
+                  letterSpacing:2
                 }}>
                 <Dropdown.Item
                   id="menuItem"
                   href="#hero"
                   style={{
-                    padding: '1em',
+                    padding: '4vmin',
                     color: '#EDEDED',
                   }}>
                     Home
@@ -58,7 +59,7 @@ const Navbar = () => {
                   id="menuItem"
                   href="#about"
                   style={{
-                    padding: '1em',
+                    padding: '4vmin',
                     color: '#EDEDED',
                   }}>
                     About
@@ -68,7 +69,7 @@ const Navbar = () => {
                   id="menuItem"
                   href="#skills"
                   style={{
-                    padding: '1em',
+                    padding: '4vmin',
                     color: '#EDEDED',
                   }}>
                     Skills
@@ -78,7 +79,7 @@ const Navbar = () => {
                   id="menuItem"
                   href="#portfolio"
                   style={{
-                    padding: '1em',
+                    padding: '4vmin',
                     color: '#EDEDED',
                   }}>
                     Portfolio
@@ -88,7 +89,7 @@ const Navbar = () => {
                   id="menuItem"
                   href="#contact"
                   style={{
-                    padding: '1em',
+                    padding: '4vmin',
                     color: '#EDEDED',
                   }}>
                     Contact me

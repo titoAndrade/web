@@ -14,7 +14,7 @@ const Portfolio = () => {
     <div 
     data-aos="fade-up"
     data-aos-duartion="1500"
-    class="container"
+    class="container mt-5"
          id='portfolio'
          style={{
           height: '90vh',
@@ -28,9 +28,9 @@ const Portfolio = () => {
         style={{ marginTop: '10em' }}>
 
         {/* T I T L E */}
-        <div class="row justify-content-center mb-5 me-1">
-          <div class="col-lg-2 col-sm-2" style={{ fontFamily: 'anton'}}>
-           <h1 class="dbTitle" style={{ fontSize: '3.5em', textAlign: 'center'}}>My Work</h1>
+        <div class="row justify-content-center me-1">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3" style={{ fontFamily: 'anton'}}>
+           <h1 class="dbTitle" style={{ fontSize: '4em', textAlign: 'center', marginBottom: '4vmin'}}>My Work</h1>
           </div>
         </div>  
 
@@ -39,22 +39,17 @@ const Portfolio = () => {
           {/* I T E M  # 1 */}
           <Carousel.Item>
             <div
+              id='itemContainer'
               data-aos="fade-up"
               data-aos-duration="1500"
               class="row justify-content-center">
-              <div class="col-10 align-items-center" style={{ height: '65vh' }}>
+              <div class="col-10 align-items-center" style={{ height: '65vh', marginBottom:'1em' }}>
                 
                 <div class="container ms-4" style={{ marginTop: '2em' }}>
                   <div class="row">
                     
-                    {/* D E V I C E S */}
-                    <div
-                      class="col-7"
-                      style={{ 
-                        height: '20em',
-                        padding: 0
-                          }}>
-                      
+                    {/* M O B I L E */}
+                    <div id='devices' class="col-xl-2 col-lg-2 col-md-3" style={{ height: '20em', padding: 0, marginRight: '-1.5em', marginTop: '1em' }}>
                       <img
                         data-aos="fade-up"
                         data-aos-duration="2000"
@@ -64,8 +59,12 @@ const Portfolio = () => {
                           height: '65%',
                           marginLeft: '2em'
                         }}/>
+                    </div>
 
+                    {/* L A P T O P */}
+                    <div id='devices' class="col-xl-6 col-lg-6 col-md-8" style={{ height: '24vmax', padding: 0, marginTop: '1em' }}>
                       <img
+                        class="'laptopImg'"
                         data-aos="fade-up"
                         data-aos-duration="1500"
                         src={laptopImg}
@@ -77,20 +76,26 @@ const Portfolio = () => {
                     </div>
                     
                     {/* T E X T */}
-                    <div id='textwork'
+                    <div
+                      id='textwork'
                       data-aos="fade-up"
                       data-aos-duration="1000"
-                      class="col-lg-4 col-sm-4 ms-5"
-                      style={{ 
-                        height: '20em'
-                          }}>
+                      class="col-xl-4 col-lg-4 col-md-11 col-sm-10 "
+                      style={{ padding: 0, marginRight: '0em', marginTop: '0em', paddingInline: '1em' }}>
+                        
                       <div class="mt-4" style={{ color: '#fff', fontFamily: 'roboto', fontWeight: '300' }}>
                         <h1 class="mt-2 mb-4" style={{ fontFamily: 'yellowtail', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>Project Name</h1>
                         <p>description description description description description description description description description description description description</p>
                         <a href="#">
-                          <button class="btn btn-primary mt-2">go to</button>
+                          <button
+                            class="btn btn-primary mt-2"
+                            style={{
+                              background: '#DA0037',
+                              color: '#EDEDED',
+                              border: 'none',
+                            }}>go to project
+                          </button>
                         </a>
-                        <img src="" alt="" />
                       </div>
                     </div>
 
@@ -104,41 +109,43 @@ const Portfolio = () => {
           {/* I T E M  # 2 */}
           <Carousel.Item>
             <div
+              id='itemContainer'
               data-aos="fade-up"
               data-aos-duration="1500"
               class="row justify-content-center">
-              <div class="col-10 align-items-center" style={{ height: '65vh' }}>
+              <div class="col-10 align-items-center" style={{ height: '65vh', marginBottom:'1em' }}>
                 
                 <div class="container ms-4" style={{ marginTop: '2em' }}>
                   <div class="row">
-                    
+
                     {/* T E X T */}
-                    <div id='textwork2'
+                    <div
+                      id='textwork'
                       data-aos="fade-up"
                       data-aos-duration="1000"
-                      class="col-lg-4 col-sm-4 ms-4"
-                      style={{ 
-                        height: '20em'
-                          }}>
+                      class="col-xl-4 col-lg-4 col-md-11 col-sm-10 "
+                      style={{ padding: 0, marginTop: '0em', paddingInline: '1em' }}>
+                        
                       <div class="mt-4" style={{ color: '#fff', fontFamily: 'roboto', fontWeight: '300' }}>
                         <h1 class="mt-2 mb-4" style={{ fontFamily: 'yellowtail', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>Project Name</h1>
                         <p>description description description description description description description description description description description description</p>
                         <a href="#">
-                          <button class="btn btn-primary mt-2">go to</button>
+                        <button
+                            class="btn btn-primary mt-2"
+                            style={{
+                              background: '#DA0037',
+                              color: '#EDEDED',
+                              border: 'none',
+                            }}>go to project
+                          </button>
                         </a>
-                        <img src="" alt="" />
                       </div>
                     </div>
-
-                    {/* D E V I C E S */}
-                    <div
-                      class="col-7"
-                      style={{ 
-                        height: '20em',
-                        padding: 0
-                          }}>
-                      
+                    
+                    {/* L A P T O P */}
+                    <div id='devices' class="col-xl-6 col-lg-6 col-md-8" style={{ height: '24vmax', padding: 0, marginRight: '-1.5em', marginTop: '1em' }}>
                       <img
+                        class="'laptopImg'"
                         data-aos="fade-up"
                         data-aos-duration="1500"
                         src={laptopImg}
@@ -147,7 +154,10 @@ const Portfolio = () => {
                           height: '90%',
                           marginTop: '2em'
                         }}/>
-
+                    </div>
+                    
+                    {/* M O B I L E */}
+                    <div id='devices' class="col-xl-2 col-lg-2 col-md-3" style={{ height: '20em', padding: 0, marginTop: '1em' }}>
                       <img
                         data-aos="fade-up"
                         data-aos-duration="2000"
@@ -157,9 +167,8 @@ const Portfolio = () => {
                           height: '65%',
                           marginLeft: '2em'
                         }}/>
-
                     </div>
-                    
+
                   </div>
                 </div>
 
