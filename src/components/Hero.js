@@ -61,7 +61,7 @@ const Hero = () => {
               margin: 0,
               padding: 0,
               }}>
-              Tito Andrade
+              Tito Raul
           </h1>
         </div>
       </div>
