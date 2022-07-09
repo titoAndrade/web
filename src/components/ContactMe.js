@@ -51,7 +51,7 @@ const ContactMe = () => {
           <div class="row justify-content-center">
             <div class="col-10 mb-3">
               <label for="exampleFormControlInput1" class="form-label">Name</label>
-              <input type="text" name="user_name" class="form-control" id="exampleFormControlInput1" placeholder="Jane/John Doe" required={true}/>
+              <input type="text" name="user_name" class="form-control" id="exampleFormControlInput1" placeholder="Your name" required={true}/>
             </div>
           </div>
 

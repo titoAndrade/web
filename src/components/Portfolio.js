@@ -87,7 +87,7 @@ const Portfolio = () => {
                         
                       <div class="mt-4" style={{ color: '#fff', fontFamily: 'Prata', fontWeight: '600' }}>
                         <h1 class="mt-2 mb-4" style={{ fontFamily: 'Arima', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>SearchKeer</h1>
-                        <p>This is a Web App that allows you to find quality photos from the 'unsplash API' for free, you can find original photos and download from de app or go to the main site and choose another resolution </p>
+                        <p>This is a Web App that allows you to find quality photos from the 'unsplash API' for free, you can find original photos and download from the app or go to the oficial unsplash site and choose another resolution </p>
                         <a href="https://searchkeer.netlify.app/" target="_blank" rel="noreferrer">
                           <button
                             class="btn btn-primary mt-2"
