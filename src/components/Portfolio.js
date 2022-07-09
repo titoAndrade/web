@@ -1,6 +1,8 @@
 import { Carousel } from 'react-bootstrap'
-import mobileImg from './images/portfolio_project_1_responsive.png'
-import laptopImg from './images/portfolio_project_1.png'
+import mobileImg from './images/workinprogress-mobile.png'
+import laptopImg from './images/workinprogress-desktop.png'
+import searchkeerMobile from './images/searchkeer-mobile.png'
+import searchkeerDesktop from './images/searchkeer-desktop.png'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -53,7 +55,7 @@ const Portfolio = () => {
                       <img
                         data-aos="fade-up"
                         data-aos-duration="2000"
-                        src={mobileImg}
+                        src={searchkeerMobile}
                         alt=""
                         style={{
                           height: '65%',
@@ -67,7 +69,7 @@ const Portfolio = () => {
                         class="'laptopImg'"
                         data-aos="fade-up"
                         data-aos-duration="1500"
-                        src={laptopImg}
+                        src={searchkeerDesktop}
                         alt=""
                         style={{
                           height: '90%',
@@ -83,10 +85,10 @@ const Portfolio = () => {
                       class="col-xl-4 col-lg-4 col-md-11 col-sm-10 "
                       style={{ padding: 0, marginRight: '0em', marginTop: '0em', paddingInline: '1em' }}>
                         
-                      <div class="mt-4" style={{ color: '#fff', fontFamily: 'roboto', fontWeight: '300' }}>
-                        <h1 class="mt-2 mb-4" style={{ fontFamily: 'yellowtail', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>Project Name</h1>
-                        <p>description description description description description description description description description description description description</p>
-                        <a href="#">
+                      <div class="mt-4" style={{ color: '#fff', fontFamily: 'Prata', fontWeight: '600' }}>
+                        <h1 class="mt-2 mb-4" style={{ fontFamily: 'Arima', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>SearchKeer</h1>
+                        <p>This is a Web App that allows you to find quality photos from the "unsplash API" for free, you can find original photos and download from de appor go to the originalsite anf choose other size </p>
+                        <a href="https://searchkeer.netlify.app/">
                           <button
                             class="btn btn-primary mt-2"
                             style={{
@@ -127,8 +129,8 @@ const Portfolio = () => {
                       style={{ padding: 0, marginTop: '0em', paddingInline: '1em' }}>
                         
                       <div class="mt-4" style={{ color: '#fff', fontFamily: 'roboto', fontWeight: '300' }}>
-                        <h1 class="mt-2 mb-4" style={{ fontFamily: 'yellowtail', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>Project Name</h1>
-                        <p>description description description description description description description description description description description description</p>
+                        <h1 class="mt-2 mb-4" style={{ fontFamily: 'yellowtail', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>Work in Progress</h1>
+                        <p>coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon!</p>
                         <a href="#">
                         <button
                             class="btn btn-primary mt-2"
