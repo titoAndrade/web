@@ -131,7 +131,7 @@ const Portfolio = () => {
                       <div class="mt-4" style={{ color: '#fff', fontFamily: 'roboto', fontWeight: '300' }}>
                         <h1 class="mt-2 mb-4" style={{ fontFamily: 'yellowtail', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>Work in Progress</h1>
                         <p>coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon! coming soon!</p>
-                        <a href="" target="_blank" rel="noreferrer">
+                        {/* <a href="" target="_blank" rel="noreferrer">
                         <button
                             class="btn btn-primary mt-2"
                             style={{
@@ -140,7 +140,7 @@ const Portfolio = () => {
                               border: 'none',
                             }}>go to project
                           </button>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                     
