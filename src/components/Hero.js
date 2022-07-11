@@ -1,5 +1,5 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import '../scss/custom.css'
+import '../App.css'
 
 const Hero = () => {
 

@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import './scss/custom.css'
+import './App.css'
 import Loader from'./components/Loader'
 import AOS from 'aos'
 import 'aos/dist/aos.css'

@@ -1,38 +1,357 @@
-.App {
-  text-align: center;
+/* C U S T O M - C S S */
+
+::-webkit-scrollbar { 
+  width: 10px;
+  background: #101010 ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #444444);
+  border-radius: 6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #DA0037);
+  cursor: pointer;
+} 
+
+#loading {
+  overflow: hidden;
+}
+
+.dbTitle {
+  box-shadow: inset 0 0 0 0 linear-gradient(#DA0037, transparent);
+  color: #EDEDED;
+  transition: color .6s ease-in-out, box-shadow .6s ease-in-out;
+  text-align: left;
+}
+.dbTitle:hover {
+  box-shadow: inset 312px 0 0 0 #DA0037;
+  color: #171717;
+  cursor: pointer;
+}
+
+div #icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+div #icon:not(:hover) {
+  transition: 0.5s ease-out;
+}
+
+.dropItem {
+  padding: 1.5em;
+  text-align: right;
+  font-family: 'roboto';
+  font-weight: 300;
+}
+
+.dropItem:hover {
+  color: #171717;
+  background: #DA0037;
+  font-family: 'roboto';
+  font-weight: 600;
+}
+
+/* L A N G U A G E S */
+
+.langTitle {
+  display: block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+
+/* M E N U */
+
+#menuItem:hover {
+  background: #DA0037;
+  transition: 0.5s ease-in;
+}
+
+#menuItem:not(:hover) {
+  transition: 0.7s ease-out;
+}
+
+/* H E R O */
+
+.heroName:hover {
+  transform: scale(1.1);
+  background: #DA0037;
+  transition: 0.6s ease-out;
+  cursor: pointer;
+  color: #171717;
+}
+
+.heroName:not(:hover) {
+  transition: 0.6s ease-out;
+}
+
+.heroPronoun:hover {
+  transform: rotate(-10deg);
+  transition: 0.4s ease-out;
+  cursor: pointer;
+}
+
+.heroPronoun:not(:hover) {
+  transition: 0.2s ease-out;
+}
+
+.heroTyped:hover {
+  cursor: pointer;
+}
+
+  #all {
+    max-width: 100% !important;
+    user-select: none;
+  }
+
+  .nav {
+    position:fixed;
+  }
+
+/* A B O U T */
+
+.photoBack:hover {
+  transform: translateX(15px);
+  transition: .6s ease-in-out;
+  cursor: pointer;
+}
+
+.photoBack:not(:hover) {
+  transition: .3s ease-in-out;
+}
+
+#boxShadows:hover {
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  box-shadow: 5px 5px 25px #000;
+}
+
+#boxShadows:not(:hover) {
+  transition: .3s ease-in-out;
+}
+
+.aboutTitle {
+  box-shadow: inset 0 0 0 0 linear-gradient(#DA0037, transparent);
+  transition: color .6s ease-in-out, box-shadow .6s ease-in-out;
+  text-indent: 10px;
+}
+.aboutTitle:hover {
+  box-shadow: inset 50vmin 0 0 0 #DA0037;
+  cursor: pointer;
+  color: #171717;
+}
+
+.technologiesTitle {
+  box-shadow: inset 0 0 0 0 linear-gradient(#DA0037, transparent);
+  transition: color .6s ease-in-out, box-shadow .6s ease-in-out;
+}
+
+.technologiesTitle:hover {
+  box-shadow: inset 100vmin 0 0 0 #DA0037;
+  cursor: pointer;
+  color: #171717;
+}
+
+.offLineTitle {
+  box-shadow: inset 0 0 0 0 linear-gradient(#DA0037, transparent);
+  transition: color .6s ease-in-out, box-shadow .6s ease-in-out;
+  text-indent: 10px;
+}
+.offLineTitle:hover {
+  box-shadow: inset 110px 0 0 0 #DA0037;
+  cursor: pointer;
+  color: #171717;
+}
+
+@media screen and (max-width: 700px) {
+
+  #about {
+    max-width: 100%;
+  }
+  
+  #about div {
+    margin: 0;
+    padding: 0;
+    margin-top: -6em;
+    margin-bottom: -5em;
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  #image {
+    transform: scale(0.75);
+    max-width: 100%;
+  }
+
+  #boxShadows {
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  #boxShadows div {
+    margin-top: 0.5em;
+  }
+
+  #boxShadows p {
+    margin-top: 1em;
+  }
+
+  #boxShadows div #lordiTitle {
+    position: absolute;
+    display: inline-block;
+    margin-left: 2.5em;
+    margin-top: 1em;
+  }
+
+  .offLineTitle {
+    margin-top: 2em;
+    margin-bottom: 2.2em;
+  }
+
+  .offlineicons div{
+    display: inline;    
+  }
+
+  #interest div div {
+    display: inline;
+    padding: 0;
+    margin-left: -1.5em;
+    margin-right: -1em;
+  }
+
+  /* T E C H N O L O G I E S */
+
+  .skillsTitle {
+    box-shadow: inset 0 0 0 0 linear-gradient(#DA0037, transparent);
+    color: #fff;
+    transition: color .6s ease-in-out, box-shadow .6s ease-in-out;
+    text-align: left;
+  }
+  .skillsTitle:hover {
+    box-shadow: inset 150px 0 0 0 #DA0037;
+    color: #171717;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 700px) {
+    
+    #iconsTec div {
+      margin-top: -1.5em;
+    }
+
+    #iconsFrameworks {
+      position: absolute;
+    }
+
+    #iconsFrameworks div {
+      margin-top: 7em;
+    }
+
+    #database div{
+      margin-top: 6em;
+    }
+
+    #iconsData div{
+      margin-top: -1.5em;
+    }
+
+    #database #datacontent {
+      margin-top: 9em;
+    }
+
+    .langTitle {
+      padding-left: 1.2em;
+    }
+
+    #techTitle{
+      margin-left: -3em;
+      font-size: 0.8em;
+    }
+
+    #techTitle h1 {
+      margin-left: 0.7em;
+      text-align: center ;
+    }
+  }
+
+  /* P O R T F O L I O */
+
+  @media screen and (max-width: 700px) {
+
+    #portfolio {
+      max-width: 100%;
+      margin-top: 12em;
+    }
+
+    #portfolio img {
+      display: none;
+    }
+
+    #portfolio h1 {
+      margin-left: 0.5em;
+    }
+
+    #portfolio .dbTitle {
+      margin-bottom: -1em;
+    }
+
+    #devices {
+      display: none;
+    }
+
+    #textwork {
+      font-size: 3.5vmin;
+      text-align: center;
+      margin-left: -7vmin;
+    }
+    
+
+    #textwork h1 {
+      margin-left: -0.25em;
+    }
+
+    #itemContainer {
+      margin-bottom: -8em;
+    }
+  }
+
+  /* C O N T A C T  M E */
+
+  #sendFormButton:hover {
+    background: #fff;
+    box-shadow: #DA0037 0px 0px 15px;
+    transition: .3s ease-in-out
+  }
+  
+  #sendFormButton:not(:hover) {
+    transition: .3s ease-in-out
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* F O O T E R */
+
+#socialIcon:hover {
+  transform: scale(1.2);
+  transition: .3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+#socialIcon:not(:hover) {
+  transition: .3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 700px) {
+
+  #social {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  #social div {
+    margin-top: -0.5em;
+    margin-bottom: -0.8em;
+
   }
+
 }
