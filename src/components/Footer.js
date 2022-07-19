@@ -3,6 +3,7 @@ import linkedin from './icons/icons8-linkedin-100.png'
 import twitter from './icons/icons8-twitter-squared-100.png'
 import instagram from './icons/icons8-instagram-100.png'
 import whatsapp from './icons/icons8-whatsapp-100.png'
+import cv from './icons/cv.png'
 
 const Footer = () => {
   return (
@@ -49,6 +50,12 @@ const Footer = () => {
           <a href="https://wa.me/message/MRST6DWHTKRMO1" rel="noreferrer" target="_blank">
             <button style={{ background: 'none', border: 'none' }}>
               <img id='socialIcon' src={whatsapp} alt="" style={{ paddingInline:'3.2vmin', height: '1.45rem'}} title="whatsApp"/>
+            </button>
+          </a>
+          {/* CURRICULUM */}
+          <a href="https://mnf.red/titodev" rel="noreferrer" target="_blank">
+            <button style={{ background: 'none', border: 'none' }}>
+              <img id='socialIcon' src={cv} alt="" style={{ paddingInline:'2.5vmin', height: '1.65rem'}} title="CV"/>
             </button>
           </a>
         </div>
