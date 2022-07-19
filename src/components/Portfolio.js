@@ -3,6 +3,8 @@ import mobileImg from './images/workinprogress-mobile.png'
 import laptopImg from './images/workinprogress-desktop.png'
 import searchkeerMobile from './images/searchkeer-mobile.png'
 import searchkeerDesktop from './images/searchkeer-desktop.png'
+import mailer4allMobile from './images/mailer4all-mobile.png'
+import mailer4allDesktop from './images/mailer4all-desktop.png'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -109,6 +111,76 @@ const Portfolio = () => {
           </Carousel.Item>
 
           {/* I T E M  # 2 */}
+          <Carousel.Item>
+            <div
+              id='itemContainer'
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="row justify-content-center">
+              <div class="col-10 align-items-center" style={{ height: '65vh', marginBottom:'1em' }}>
+                
+                <div class="container ms-4" style={{ marginTop: '2em' }}>
+                  <div class="row">
+
+                    {/* T E X T */}
+                    <div
+                      id='textwork'
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      class="col-xl-4 col-lg-4 col-md-11 col-sm-10 "
+                      style={{ padding: 0, marginTop: '0em', paddingInline: '1em' }}>
+                        
+                      <div class="mt-4" style={{ color: '#fff', fontFamily: 'roboto', fontWeight: '300' }}>
+                        <h1 class="mt-2 mb-4" style={{ fontFamily: 'yellowtail', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>mailer4all</h1>
+                        <p>An app that allows you to send emails from a web platform without the need to register or log in, ideal for last minute emails and very convenient if you don't have your phone or laptop with you, since you can borrow any device with internet and leave a hurry</p>
+                        <a href="https://mailer4all.netlify.app/" target="_blank" rel="noreferrer">
+                        <button
+                            class="btn btn-primary mt-2"
+                            style={{
+                              background: '#DA0037',
+                              color: '#EDEDED',
+                              border: 'none',
+                            }}>go to project
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                    
+                    {/* L A P T O P */}
+                    <div id='devices' class="col-xl-6 col-lg-6 col-md-8" style={{ height: '24vmax', padding: 0, marginRight: '-1.5em', marginTop: '1em' }}>
+                      <img
+                        class="'laptopImg'"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                        src={mailer4allDesktop}
+                        alt=""
+                        style={{
+                          height: '90%',
+                          marginTop: '2em'
+                        }}/>
+                    </div>
+                    
+                    {/* M O B I L E */}
+                    <div id='devices' class="col-xl-2 col-lg-2 col-md-3" style={{ height: '20em', padding: 0, marginTop: '1em' }}>
+                      <img
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                        src={mailer4allMobile}
+                        alt=""
+                        style={{
+                          height: '65%',
+                          marginLeft: '2em'
+                        }}/>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </Carousel.Item>
+
+          {/* C O M I N G  S O O N */}
           <Carousel.Item>
             <div
               id='itemContainer'
