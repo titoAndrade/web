@@ -131,7 +131,7 @@ const Portfolio = () => {
                       style={{ padding: 0, marginTop: '0em', paddingInline: '1em' }}>
                         
                       <div class="mt-4" style={{ color: '#fff', fontFamily: 'roboto', fontWeight: '300' }}>
-                        <h1 class="mt-2 mb-4" style={{ fontFamily: 'yellowtail', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>mailer4all</h1>
+                        <h1 class="mt-2 mb-4" style={{ fontFamily: 'Arima', fontSize: '4em', textShadow: '2px 4px 15px #000' }}>mailer4all</h1>
                         <p>An app that allows you to send emails from a web platform without the need to register or log in, ideal for last minute emails and very convenient if you don't have your phone or laptop with you, since you can borrow any device with internet and leave a hurry</p>
                         <a href="https://mailer4all.netlify.app/" target="_blank" rel="noreferrer">
                         <button
