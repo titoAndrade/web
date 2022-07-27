@@ -30,44 +30,41 @@ const Hero = () => {
         marginTop: '30vh',
         marginBottom: '45vh',
         background: 'transparent',
-        // height: '100vmin',
         color: '#ededed',
         }}>
       
       <div class="row justify-content-center align-items-center" style={{ marginBottom: '-2vmin' }} >
-        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-6">
+        <div class="col-7">
           <div
             class="heroPronoun"
             style={{
               fontFamily: 'yellowtail',
-              fontSize: '13vmin',
               fontWeight: '400',
-              marginLeft: '3vw'
+              paddingInline: '2vmin'
               }}>
-              I'm
+              <h1>I'm</h1> 
           </div>
         </div>
       </div>
 
       <div class="row justify-content-center align-items-center">
-        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-6" >
+        <div class="col-7" >
           <h1 
             class="heroName"
             style={{ 
               fontFamily: 'anton',
               fontWeight: '400',
-              fontSize: '18.55vmin',
-              textAlign: 'center',
+              textAlign: 'left',
               margin: 0,
               padding: 0,
               }}>
-              Tito Andrade
+              <h1>TITODEV</h1>
           </h1>
         </div>
       </div>
             
       <div class="row justify-content-center align-items-center">
-        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-6">
+        <div class="col-7">
           <div
             class="heroTyped"
             style={{
@@ -75,7 +72,7 @@ const Hero = () => {
               fontSize: '5.5vmin',
               fontFamily: 'roboto',
               fontWeight: '300',
-              marginLeft: '3vw'
+              paddingInline: '2vmin'
                }}>
               {text}
               <Cursor/>

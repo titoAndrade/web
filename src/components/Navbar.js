@@ -41,7 +41,7 @@ const Navbar = () => {
                   borderRadius: 0,
                   // margin: -10,
                   marginTop: 1,
-                  fontSize: '1.8vmax',
+                  fontSize: '3vmin',
                   fontFamily: 'roboto',
                   letterSpacing:2
                 }}>

@@ -35,7 +35,7 @@ const Footer = () => {
             </button>
           </a>
           {/* TWITTER */}
-          <a href="https://twitter.com/twttitto" rel="noreferrer" target="_blank">
+          <a href="https://twitter.com/titodev_" rel="noreferrer" target="_blank">
             <button style={{ background: 'none', border: 'none' }}>
               <img id='socialIcon' src={twitter} alt="" style={{ paddingInline:'3.2vmin', height: '1.5rem'}} title="twitter"/>
             </button>
