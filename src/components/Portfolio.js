@@ -140,7 +140,7 @@ const Portfolio = () => {
                               background: '#DA0037',
                               color: '#EDEDED',
                               border: 'none',
-                            }}>go to project
+                            }}>visit
                           </button>
                         </a>
                       </div>
