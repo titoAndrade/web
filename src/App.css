@@ -78,7 +78,7 @@ div #icon:not(:hover) {
 
 .heroName h1 {
   font-size: 18vmin;
-  text-shadow: 2em 2em #DA0037;
+  text-shadow: 0.6vmin 0.8vmin #DA0037;
   display: inline-block;
   padding-inline: 2vmin;
 }
