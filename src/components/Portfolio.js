@@ -5,7 +5,7 @@ import searchkeerMobile from './images/searchkeer-mobile.png'
 import searchkeerDesktop from './images/searchkeer-desktop.png'
 import mailer4allMobile from './images/mailer4all-mobile.png'
 import mailer4allDesktop from './images/mailer4all-desktop.png'
-import infoIpMobile from './images/infoip-mobile'
+import infoIpMobile from './images/infoip-mobile.png'
 import infoIpDesktop from './images/infoip-desktop.png'
 
 import AOS from 'aos'
