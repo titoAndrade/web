@@ -100,21 +100,19 @@ const About = () => {
           {/* A B O U T  T E X T */}
           <div class="row mt-3">
             <div
+              id='aboutText'
               class="col-12"
               data-aos="fade-up"
               data-aos-duration="1800"
               style={{
                 color: '#ededed',
-                textAlign: 'justify',
-                fontSize: '130%',
+                fontSize: '16px',
                 fontFamily: 'roboto',
                 fontWeight: '300',
               }}>
-              <p>Hi, I'm <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>Tito Andrade</b>, I'm a <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>self-taught </b>junior web developer, To train myself I invested a lot of time doing research to find the right courses, tutorials and of course, I read official documentation of different technologies used for both frontend and backend.</p>
+              <p>Hi, I'm <b class="aboutTitle" style={{ fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>Tito Andrade</b>, I'm a <b class="aboutTitle" style={{ fontFamily: 'roboto', fontWeight: '600' }}>self-taught </b>junior web developer, To train myself I invested a lot of time doing research to find the right courses, tutorials and of course, I read official documentation of different technologies used for both frontend and doing a market research I realized that, in order to reach my desired goal, I had to study and understand React library and create websites and web applications with its component-based system and bootstrap framework for responsive layout.</p>
               
-              <p style={{ marginTop: -10 }}>
-              I would like to start working in a company where I can continue learning and mastering different technologies and languages ​​and become a <b class="aboutTitle" style={{ fontSize: '20px', fontFamily: 'roboto', fontWeight: '600', letterSpacing: 0 }}>World-class</b> developer!
-              </p>
+              <p style={{ marginTop: -10 }}>I come from another industry, I am an architect with more than 10 years of experience in both designing and construction, managing staff and dealing with clients which in terms of soft skills I have some checked boxes that will help me bring value to the team that will give me the opportunity to join them to work together &  keep learning to mastering different technologies and languages ​​and become a <b class="aboutTitle" style={{ fontFamily: 'roboto', fontWeight: '600' }}>World-class</b> developer!</p>
               
             </div>
           </div>
@@ -130,7 +128,7 @@ const About = () => {
                 style={{
                   fontFamily: 'anton',
                   fontWeight: 400,
-                  fontSize: '3em',
+                  fontSize: '220%',
                   textIndent: 4,
                   textAlign: 'left'
                 }}>Off-line
@@ -147,35 +145,35 @@ const About = () => {
                 src="https://cdn.lordicon.com/ktxpktdd.json"
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#DA0037"
-                style={{ marginRight: '4.9vmin', width: '12vmin', height: '12vmin', cursor: 'pointer'}}>
+                style={{ marginInline: '1.5vmax', width: '5vmax', height: '5vmax'}}>
               </lord-icon>
 
               <lord-icon title="mma"
                 src="https://cdn.lordicon.com/ibgjiwvi.json"
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#DA0037"
-                style={{ marginRight: '4.9vmin', width: '5.5vmax', height: '5.5vmax', cursor: 'pointer'}}>
+                style={{ marginInline: '1.5vmax', width: '5vmax', height: '5vmax'}}>
               </lord-icon>
                             
               <lord-icon title="movies & series"
                 src="https://cdn.lordicon.com/tdxypxgp.json"
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#DA0037"
-                style={{ marginRight: '4.9vmin', width: '5.5vmax', height: '5.5vmax', cursor: 'pointer'}}>
+                style={{ marginInline: '1.5vmax', width: '5vmax', height: '5vmax'}}>
               </lord-icon>
                             
               <lord-icon title="scotch & beer"
                 src="https://cdn.lordicon.com/szzsfswk.json"
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#DA0037"
-                style={{ marginRight: '4.9vmin', width: '5.5vmax', height: '5.5vmax', cursor: 'pointer'}}>
+                style={{ marginInline: '1.5vmax', width: '5vmax', height: '5vmax'}}>
               </lord-icon>
                             
               <lord-icon title="pizza"
                 src="https://cdn.lordicon.com/jpdtnwas.json"
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#DA0037"
-                style={{ marginRight: '4.9vmin', width: '5.5vmax', height: '5.5vmax', cursor: 'pointer'}}>
+                style={{ marginInline: '1.5vmax', width: '5vmax', height: '5vmax'}}>
               </lord-icon>
               
             </div>

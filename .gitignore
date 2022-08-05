@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# files
+twitter portada.psd
+desktop.ini
+
 # testing
 /coverage
 
